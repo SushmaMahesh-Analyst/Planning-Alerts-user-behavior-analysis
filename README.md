@@ -34,6 +34,7 @@ https://rpubs.com/SushmaMahesh/1246601
 
 ## Project Structure
 
+```text
 planning-alerts-eda/
 │
 ├── README.md
@@ -44,7 +45,7 @@ planning-alerts-eda/
 │   ├── raw/
 │   │   ├── planning_alerts_data.csv
 │   │   ├── energy_drinks.csv
-│   │   └── sub_training.csv
+│   │   ├── sub_training.csv
 │   │   └── sub_testing.csv
 │   │
 │   └── processed/
@@ -53,20 +54,21 @@ planning-alerts-eda/
 │   ├── data_cleaning.R
 │   ├── eda_analysis.R
 │   ├── clustering_analysis.R
-│   ├── decision_tree_model.R
+│   └── decision_tree_model.R
 │
 ├── outputs/
 │   ├── plots/
 │   ├── tables/
-│   ├── models/
+│   └── models/
 │
 ├── reports/
 │   ├── planning_alerts_report.html
-│   ├── energy_clustering_report.html
+│   └── energy_clustering_report.html
 │
 ├── images/
-│   ├── dashboard_screenshots/
+│   └── dashboard_screenshots/
 │
 └── docs/
-    ├── methodology.md
+    └── methodology.md
+```
 
