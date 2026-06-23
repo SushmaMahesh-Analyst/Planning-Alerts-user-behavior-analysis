@@ -1,74 +1,28 @@
 # User Behaviour Analysis on Planning Alerts
 
-A data analytics project focused on understanding user behaviour on the PlanningAlerts.ie platform using Exploratory Data Analysis (EDA), Machine Learning techniques, and Clustering. The system is designed to improve user engagement, conversion rates, and retention through data-driven segmentation and insights.
+A data analytics project focused on understanding user behaviour on PlanningAlerts.ie, an Irish platform that notifies users about local planning applications and developments. This EDA project examines how users interact with the platform and identifies opportunities to improve engagement, navigation, and conversion performance across the platform.
 
-This project was developed as part of an analytics initiative using R programming for statistical analysis, modelling, and visualization. 
+This project was carried out using R programming with a focus on visualisations, summary statistics, and trend analysis.
 
 ## Methodology
-This project follows a structured analytics pipeline starting from raw data exploration to predictive modelling and segmentation.
+An Exploratory Data Analysis (EDA) approach was followed using R. The workflow includes data cleaning, transformation, aggregation of behavioural metrics, and visual analysis of user journeys and engagement patterns.
+
+## 📊 Dataset
+The dataset consists of user activity logs from PlanningAlerts.ie, including session identifiers, cookies, page interactions, device types, referrer sources, timestamps, and application-related user actions.
 
 ### 1. Data Preparation & Cleaning
-Handled missing values and inconsistent records, standardized variables for analysis, and created derived features to support behavioural insights and improve the quality of downstream analysis and modelling.
+Performed data preprocessing by handling missing values and inconsistent records, standardising variables, and creating derived features to support behavioural analysis and ensure data quality for downstream insights.
 
 ### 2. Exploratory Data Analysis (EDA)
-Conducted exploratory data analysis to examine user clickstream behaviour and interaction patterns, identify trends in engagement, bounce rates, and conversions, and perform funnel analysis to uncover key drop-off points in the user journey.
-
-### 3. Predictive Modelling (Decision Tree)
-Built a Decision Tree classification model to predict user conversion behaviour based on key attributes such as age, spending patterns, and length of relationship (LOR). The model identified the factors most strongly associated with user conversions and was evaluated using training and test datasets.
-
-### 4. Clustering & Segmentation
-Applied Hierarchical Clustering to group users with similar behavioural characteristics and engagement patterns. The analysis identified distinct user segments, enabling a better understanding of customer preferences and supporting targeted marketing and retention strategies.
+Conducted exploratory data analysis to examine user clickstream behaviour and interaction patterns, identify engagement trends, analyse bounce rates and conversions, and perform funnel analysis to uncover key drop-off points in the user journey.
 
 Tools & Technologies
-R Programming, Tidyverse (dplyr, ggplot2, tidyr), rpart (Decision Trees), cluster (Hierarchical Clustering), plotly (Interactive Visualisations), data preprocessing, feature engineering, statistical analysis
+R Programming, Tidyverse (dplyr, ggplot2, tidyr), data.table, lubridate, stringr, plotly, kableExtra, knitr, corrplot, data preprocessing, feature engineering,  statistical analysis
 
 ## Key Outcomes
 
-- Decision Tree achieved 62% training accuracy and 51% test accuracy. 
-- Pruned model improved test accuracy to 52%. 
-- Three customer segments identified via clustering (silhouette score: 25.5%). 
-- Segmentation supports targeted marketing and ~5% potential revenue improvement.
+The main insights show that most users are first-time visitors driven mainly by direct traffic, with engagement heavily focused on application pages. However, there is a clear drop-off in the signup and conversion funnel, high bounce rates on informational pages, and relatively low cross-device usage, with desktop users performing slightly better than mobile users.
 
 ## The full analysis report can be viewed here:  
 https://rpubs.com/SushmaMahesh/1246601
-
-## Project Structure
-
-```text
-planning-alerts-eda/
-│
-├── README.md
-├── index.qmd
-├── planning-alerts-eda.Rproj
-│
-├── data/
-│   ├── raw/
-│   │   ├── planning_alerts_data.csv
-│   │   ├── energy_drinks.csv
-│   │   ├── sub_training.csv
-│   │   └── sub_testing.csv
-│   │
-│   └── processed/
-│
-├── scripts/
-│   ├── data_cleaning.R
-│   ├── eda_analysis.R
-│   ├── clustering_analysis.R
-│   └── decision_tree_model.R
-│
-├── outputs/
-│   ├── plots/
-│   ├── tables/
-│   └── models/
-│
-├── reports/
-│   ├── planning_alerts_report.html
-│   └── energy_clustering_report.html
-│
-├── images/
-│   └── dashboard_screenshots/
-│
-└── docs/
-    └── methodology.md
-```
 
