@@ -8,14 +8,10 @@ This project was developed as part of an analytics initiative using R programmin
 This project follows a structured analytics pipeline starting from raw data exploration to predictive modelling and segmentation.
 
 ### 1. Data Preparation & Cleaning
--Handled missing values and inconsistent records
--Standardised variables for analysis
--Created derived features for behavioural insights
+Handled missing values and inconsistent records, standardized variables for analysis, and created derived features to support behavioural insights and improve the quality of downstream analysis and modelling.
 
 ### 2. Exploratory Data Analysis (EDA)
--Analyzed user clickstream and behavioural patterns
--Identified trends in engagement, bounce rate, and conversions
--Performed funnel analysis to detect drop-off points
+Conducted exploratory data analysis to examine user clickstream behaviour and interaction patterns, identify trends in engagement, bounce rates, and conversions, and perform funnel analysis to uncover key drop-off points in the user journey.
 
 ### 3. Predictive Modelling (Decision Tree)
 Built a Decision Tree classification model to predict user conversion behaviour based on key attributes such as age, spending patterns, and length of relationship (LOR). The model identified the factors most strongly associated with user conversions and was evaluated using training and test datasets.
@@ -28,10 +24,10 @@ R Programming, Tidyverse (dplyr, ggplot2, tidyr), rpart (Decision Trees), cluste
 
 ## Key Outcomes
 
--Decision Tree achieved 62% training accuracy and 51% test accuracy.
--Pruned model improved test accuracy to 52%.
--Three customer segments identified via clustering (silhouette score: 25.5%).
--Segmentation supports targeted marketing and ~5% potential revenue improvement.
+- Decision Tree achieved 62% training accuracy and 51% test accuracy. 
+- Pruned model improved test accuracy to 52%. 
+- Three customer segments identified via clustering (silhouette score: 25.5%). 
+- Segmentation supports targeted marketing and ~5% potential revenue improvement.
 
 ## The full analysis report can be viewed here:  
 https://rpubs.com/SushmaMahesh/1246601
