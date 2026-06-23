@@ -1,26 +1,30 @@
 # User Behaviour Analysis on Planning Alerts
 
-This project applies Exploratory Data Analysis (EDA), Machine Learning (Decision Trees), and Clustering Techniques to understand user behaviour on the PlanningAlerts.ie platform. The objective is to improve user engagement, conversion rates, and retention through data-driven insights.
+A data analytics project focused on understanding user behaviour on the PlanningAlerts.ie platform using Exploratory Data Analysis (EDA), Machine Learning techniques, and Clustering. The system is designed to improve user engagement, conversion rates, and retention through data-driven segmentation and insights.
 
-## Key Techniques Used
-Exploratory Data Analysis (EDA), Clickstream Analysis, Decision Tree Classification (Machine Learning), Hierarchical Clustering, Customer Segmentation, Bounce Rate and Funnel Analysis, Data Visualisation (ggplot2, plotly)
+This project was developed as part of an analytics initiative using R programming for statistical analysis, modelling, and visualization. 
 
-## Tools and Technologies
-R Programming, Tidyverse (dplyr, ggplot2, tidyr), rpart (Decision Trees), cluster (Hierarchical Clustering), plotly (Interactive Visualisations), kableExtra (Reporting)
+## Methodology
+This project follows a structured analytics pipeline starting from raw data exploration to predictive modelling and segmentation.
 
-## Machine Learning Component
+### 1. Data Preparation & Cleaning
+-Handled missing values and inconsistent records
+-Standardised variables for analysis
+-Created derived features for behavioural insights
 
-### 1. Predictive Model (Decision Tree)
-- Predicts user conversion behaviour
-- Key features: LOR, spend, age
-- Accuracy:
-  - Training: 62%
-  - Testing: 51%
+### 2. Exploratory Data Analysis (EDA)
+-Analyzed user clickstream and behavioural patterns
+-Identified trends in engagement, bounce rate, and conversions
+-Performed funnel analysis to detect drop-off points
 
-### 2. Clustering Model
-- Segmented users into 3 behavioural clusters
-- Mean silhouette score: 0.255 (25.5%).
-- Identified distinct preference groups for products (D1, D3, D5)
+### 3. Predictive Modelling (Decision Tree)
+Built a Decision Tree classification model to predict user conversion behaviour based on key attributes such as age, spending patterns, and length of relationship (LOR). The model identified the factors most strongly associated with user conversions and was evaluated using training and test datasets.
+
+### 4. Clustering & Segmentation
+Applied Hierarchical Clustering to group users with similar behavioural characteristics and engagement patterns. The analysis identified distinct user segments, enabling a better understanding of customer preferences and supporting targeted marketing and retention strategies.
+
+Tools & Technologies
+R Programming, Tidyverse (dplyr, ggplot2, tidyr), rpart (Decision Trees), cluster (Hierarchical Clustering), plotly (Interactive Visualisations), data preprocessing, feature engineering, statistical analysis
 
 ## Key Outcomes
 
